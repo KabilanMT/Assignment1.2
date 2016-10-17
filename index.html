@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Personal Profile</title>
+	</head>
+	<style>
+		html, body{
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		
+		#backbox{
+			position:			absolute;
+			width:				100%;
+			height:				83%;
+			background-image:	url("https://s-media-cache-ak0.pinimg.com/originals/6e/09/7d/6e097d30aa1ad5e07a69fd67e2aa57b7.jpg");
+			background-repeat:	no-repeat;
+			background-position:center center;
+			background-size:	cover;
+			top:				0%;
+			margin: 0;
+		}
+		
+		.title{
+			position:			relative;
+			left:				31%;
+			padding-top:		15%;
+			color:				rgba(255,255,255,0.5);
+			font-size:			30px;
+			font-family:		Impact;
+		}
+		
+		.ava{
+			position:			absolute;
+			left:				0;
+			right:				0;
+			top:				72%;
+			bottom:				0;
+			margin:				auto;
+			height:				425px;
+			width:				400px;
+			border-radius: 		100px;
+		}
+
+		#midbox{
+			position:			absolute;
+			width:				100%;
+			height:				46%;
+			background-image:	url("http://img2.wikia.nocookie.net/__cb20140717125840/adventure-time-battle-party/images/5/50/Wiki-background");
+			top:				83%;
+			background-repeat:	no-repeat;
+			background-position:center top;
+			background-size:	100% 100%;
+			z-index: 			-1;
+			margin: 0;
+		}
+		
+		#myname{
+			position:			absolute;
+			top:				102%;
+			left:				45%;
+			margin: 0;
+		}
+		
+		.name{
+			position:absolute;
+			color:rgba(225,49,49,1);
+			font-size:60px;
+			font-family:		Impact;
+		}
+		
+		#midbotbox{
+			position:			absolute;
+			width:				100%;
+			height:				55%;
+			background-image:	url("http://www.walldevil.com/wallpapers/w10/adventure-time-princess-bubblegum-marceline-the-vampire-queen.jpg");
+			top:				129%;
+			background-repeat:	no-repeat;
+			background-position:center top;
+			background-size:	100% 100%;
+			z-index:			-2;
+			margin: 0;
+		}
+		
+		#porf1{
+			position:			absolute;
+			top:				150%;	
+			left:				5.5%;
+			margin: 0;
+		}
+		
+		#porf2{
+			position:			absolute;
+			top:				150%;	
+			left:				26%;
+			margin: 0;
+		}
+		
+		#porf3{
+			position:			absolute;
+			top:				150%;	
+			left:				45.2%;
+			margin: 0;
+		}
+		
+		#porf4{
+			position:			absolute;
+			top:				150%;	
+			left:				70.85%;
+			margin: 0;
+		}
+		
+		#porf5{
+			position:			absolute;
+			top:				150%;	
+			left:				90.65%;
+			margin: 0;
+		}
+		
+		#Bio{
+			position:			absolute;
+			width:				100%;
+			height:				78%;
+			background-image:	url("http://i.imgur.com/nFjOjzt.jpg");
+			top:				184%;
+			background-repeat:	no-repeat;
+			background-position:center top;
+			background-size:	100% 100%;
+			z-index:			-1;
+			margin: 0;
+		}
+		
+		#End{
+			position:			absolute;
+			width:				100%;
+			height:				100%;
+			background-image:	url("http://cdn.wallpapersafari.com/7/42/O69pDy.jpg");
+			background-repeat:	no-repeat;
+			background-position:center center;
+			background-size:	cover;
+			top:				262%;
+			margin: 0;
+		}
+
+		.endquote{
+			font-family:		Impact;
+			position:relative;
+			left:				40%;
+			width:				50%;
+			top:300px;
+			color:				rgba(255,255,255,0.8);
+			font-size:			50px;
+		}
+		
+		.biotitle{	
+			font-family:		Impact;
+			padding-left:		45%;
+			left:				61.5%;
+			height:				10%;
+			width:				17%;
+			z-index:			-1;
+			font-size:			80px;
+			color:				rgba(255,255,255,0.8);
+		}
+		
+		.biobody{
+			width:				40%;
+			z-index:			-1;
+			font-size:			30px;
+			font-family:		Impact;
+			color:				rgba(165,42,42,0.8);
+			padding-left:		45%;
+		}
+		
+		.biopic{
+			position:			absolute;
+			height:				64%;
+			width:				30%;
+			top:				191%;
+			left:				6.5%;
+			z-index:			-1;
+		}
+		
+		
+		.porfimg{
+			position:			absolute;
+			height:				30%;
+			width:				17%;
+			top:				154%;	
+			z-index:			-1;
+		}
+		
+		.porfimg2{
+			position:			absolute;
+			left:				20.5%;
+			height:				30%;
+			width:				17%;
+			top:				154%;	
+			z-index:			-1;
+		}
+		
+		.porfimg3{
+			position:			absolute;
+			left:				41%;
+			height:				30%;
+			width:				17%;
+			top:				154%;	
+			z-index:			-1;
+		}
+		
+		.porfimg4{
+			position:			absolute;
+			left:				61.5%;
+			height:				30%;
+			width:				17%;
+			top:				154%;	
+			z-index:			-1;
+		}
+		
+		.porfimg5{
+			position:			absolute;
+			left:				82%;
+			height:				30%;
+			width:				17%;
+			top:				154%;	
+			z-index:			-1;
+		}
+		
+		.job{
+			padding:			10%;
+			color:				white;
+			font-size:			40px;
+			background:			#00592D;
+			display: 			inline;
+			box-shadow: 		10px 0 0 #00592D, -10px 0 0 #00592D;
+		}
+		
+		.porfimg2:hover
+		{
+			height: 40%;
+			width: 27%;
+		}
+		
+		.porfimg2:hover
+		{
+			height: 35%;
+			width: 27%;
+			left: 10%;
+		}
+		
+		#Magic{
+			color: white;
+			background-color: green;
+			border: solid 2px gray;
+			border-radius: 10px;
+		}
+
+		#Scruff{
+			color: white;
+			background-color: green;
+			border: solid 2px gray;
+			border-radius: 10px;
+		}
+	</style>
+	<body>
+		<div id="backbox">
+			<i><h3 class="title">"BMO Chop! If this were a real attack, you'd be dead."</h3></i>
+		</div>
+		
+		<div id="profilepic">
+			<img class="ava" src ="http://orig15.deviantart.net/691c/f/2011/099/6/7/bmo_by_atatakakunakatta-d3dkm51.jpg"/>
+		</div>
+		
+		<div id = "myname">
+			<h2 class = "name">Kabilan</h2>
+		</div>
+		
+		<div id="midbox">
+		</div>
+		
+		<div id="midbotbox">
+		</div>
+		
+		<div id="porf1">
+			<h2 class="job">Starbucks</h2>
+		</div>
+		<a href="http://www.starbucks.ca/">
+			<img src="http://i.imgur.com/AjvCPUi.gif" class = "porfimg"/>
+		</a>
+		<div id="porf2">
+			<h2 class="job">Pharmacy</h2>
+		</div>
+		<img src="http://data.whicdn.com/images/36384541/large.gif" class = "porfimg2"/>
+		
+		<div id="porf3">
+			<h2 class="job">McDonalds</h2>
+		</div>
+		<a href="http://www.mcdonalds.ca/ca/en.html">
+			<img src="http://files.shandymedia.com/styles/page/s3/images/photos/thesavory/japanese-mcdonalds-anime-2.gif" class = "porfimg3"/>
+		</a>
+		<div id="porf4">
+			<h2 class="job">Server</h2>
+			<button id = "Magic">Magic</button>
+		</div>
+		<img src="http://66.media.tumblr.com/27fbb5d8422f96e7287fccec72fafd4b/tumblr_inline_nq6dhp7DVM1slrvm0_500.gif" class = "porfimg4" id="server"/>
+		
+		<div id="porf5">
+			<h2 class="job">Janitor</h2>
+			<button id = "Scruff">Scruff</button>
+		</div>
+		<img src="http://i.imgur.com/hZhYS7X.gif" class = "porfimg5" id="janitor"/>
+		
+		<div id="Bio">
+			<h1 class="biotitle">Bio</h1>
+			<p class="biobody">I don't have very many interests, but I do enjoy programming which is why I took CIT as a course. I like to play video games and watch shows to pass the time. The words I like to live by are "Dude, sucking at something is the first step to being sorta good at something." - Jake the Dog. I hope I can get along with all of you. I have had a few jobs before but all of them were part time. I know a few programming languages already but I've forgotten the syntax over the time. Honestly I'm just writing to make this thing seem longer than it actually is because I'm not very good about writing about myself.</p>
+		</div>
+		<a href="https://www.facebook.com/CowboiTanaka">
+			<img src="http://i.imgur.com/I8CWhD3.jpg" class = "biopic"/>
+		</a>
+		<div id="End">
+			<i><h3 class="endquote">"When bad things happen, I know you want to believe they are a joke, but sometimes life is scary and dark. That is why we must find the light."</h3></i>
+		</div>
+		
+		<script>
+			var magicify = document.getElementById("Magic");
+			var serverimg = document.getElementById("server");
+			var scruffy = document.getElementById("Scruff");
+			var janitorimg = document.getElementById("janitor")
+			
+			var my_width 	= 250;
+			
+			magicify.onclick = function(){
+				serverimg.src = "https://media.giphy.com/media/VrTYU0x9KbTuU/giphy.gif";
+			}
+			
+			scruffy.onclick = function(){
+				janitorimg.src = "http://24.media.tumblr.com/187c1cde14c57e487fc39bef5fb2f8a0/tumblr_n15qm36NfG1r8q9x8o1_500.gif";
+				janitorimg.style.width = my_width + "px";
+				my_width = my_width + 50;
+			}
+		</script>
+	</body>
+</html>
